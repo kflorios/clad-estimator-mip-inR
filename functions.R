@@ -5,12 +5,14 @@ readXyw <- function() {
   require(pracma)
   #X <- read.table("X.txt")
   #X <- read.table("X_200_4.txt")
-  X <- read.table("X_200_5.txt")
+  #X <- read.table("X_200_5.txt")
+  X <- read.table("X_601_5.txt")
   X <- X[,-1]
   X <- as.matrix(X)
   #y <- read.table("ys.txt")
   #y <- read.table("ys_200_4.txt")
-  y <- read.table("ys_200_5.txt")
+  #y <- read.table("ys_200_5.txt")
+  y <- read.table("ys_601_5.txt")
   y <- y[,-1]
   y <- as.vector(y)
   w <- repmat(1,dim(X)[1],1)
@@ -55,7 +57,10 @@ definecAb <- function(X,y,w) {
   c<- cbind(c3,c1,c2,c4,c5)
   
 
-  d=10
+  d=50
+  #d=40
+  #d=20
+  #d=10
   #d=5
   M <- numeric(n)
   for (i in 1:n){
@@ -118,7 +123,10 @@ definelbub <- function(X,y) {
   
   require(pracma)
   #Defines lb,ub for milp.R
-  d=10
+  d=50
+  #d=40
+  #d=20
+  #d=10
   #d=5
   n <- dim(X)[1]
   p <- dim(X)[2]
@@ -197,7 +205,7 @@ milp_cplex <- function(c,A,b,Aeq,beq,lb,ub,n, p, best) {
   Qmat <- NULL
   lb <- lb
   ub <- ub
-  control <- list(trace=1)
+  control <- list(trace=1,mipemphasis=3,tilim=100)
   #control <- list(tilim=1000)
   #control <- list(tilim=100,mipemphasis=3)
   objsense <- "min"
