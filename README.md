@@ -16,6 +16,8 @@ In case you encounter an issue while trying to install Rcplex, do not hesitate t
 
 This code is a translation of the MATLAB code supplied by me at the repository https://github.com/kflorios/clad-estimator-mip
 
+For completeness, I also supply the Manual of the MATLAB version of the software in this repository also.
+
 Feedback for the R code at: cflorios@central.ntua.gr, cflorios@aueb.gr
 
 Suggested Reference:  
