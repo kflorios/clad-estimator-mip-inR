@@ -24,3 +24,5 @@ Suggested Reference:
 
 Bilias, Y., Florios, K., & Skouras, S. (2019). Exact computation of Censored
 Least Absolute Deviations estimator. Journal of Econometrics, 212(2), 584-606.
+
+https://www.sciencedirect.com/science/article/abs/pii/S030440761930140X
