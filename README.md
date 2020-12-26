@@ -3,9 +3,9 @@
 Exact computation of Censored Least Absolute Deviations estimator with Mixed Integer Programming via R code
 
 Use handy R code in main.R in order to exactly compute the CLAD estimator with MIP.
-The function sets up the matrices A,b,c,Aeq,beq,lb,ub of the MIP model,
-and then relies on a MIP solver to solve it.
-We can use CPLEX and the Rcplex package.
+The main code sets up the matrices A,b,c,Aeq,beq,lb,ub of the MIP model,
+and then relies on a MIP solver to solve it. We can use CPLEX and the Rcplex package.
+All used functions are supplied in the file functions.R
 
 The dataset is read in readXyw.R function via the files X.txt and ys.txt which can be adopted as desired.
 Currently, left censoring at zero is supposed, as is in most applications of CLAD.
